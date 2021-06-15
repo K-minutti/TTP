@@ -1,8 +1,8 @@
 # Challenge 2 - Word Count Challenge
 
-## Text Stats
-
 ![alt text](https://github.com/K-minutti/TTP/blob/main/public/favicon.ico)
+
+# Text Stats
 
 Text Stats is a web app that allows users to type, and paste text into a text field and provides them with a list of statistics relating to their input text.
 
@@ -40,7 +40,7 @@ Webpack will compile the jsx and build the project once its done click on the li
 
 ## Help
 
-Running forked and cloned project on Windows. Try the following commands in this order to run on Windows.
+Running the project on Windows. Try the following commands in this order to run on Windows.
 
 ```
 npm intall
