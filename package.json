@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "npm run build-watch & npm run start-server",
+    "build-client": "webpack",
+    "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
     "start-server": "nodemon main.js -e html,js,css --ignore public",
     "build-watch": "webpack -w",
     "start": "echo 'Running production server' && node main",
