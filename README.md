@@ -4,7 +4,7 @@
 
 # Text Stats
 
-Text Stats is a web app that allows users to type, and paste text into a text field and provides them with a list of statistics relating to their input text.[LIVE SITE](https://ttp-text-stat.herokuapp.com/)
+Text Stats is a web app that allows users to type, and paste text into a text field and provides them with a list of statistics relating to their input text. [LIVE SITE](https://ttp-text-stat.herokuapp.com/)
 
 ## Description
 
