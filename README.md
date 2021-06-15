@@ -1,6 +1,6 @@
 # Challenge 2 - Word Count Challenge
 
-# Text Stats
+## Text Stats
 
 ![alt text](https://github.com/K-minutti/TTP/blob/main/public/favicon.ico)
 
@@ -26,12 +26,17 @@ If you'd like to run this app on your computer begin by forking and cloning this
 
 ### MacOS/Linux
 
+Install dependencies
+
 ```
 npm install
-//to install dependencies
-npm run start-dev
-//the click on the link provided in you terminal in will open the project in your browser
 ```
+
+```
+npm run start-dev
+```
+
+Webpack will compile the jsx and build the project once its done click on the link provided in you terminal it will open the project in your browser.
 
 ## Help
 
@@ -45,8 +50,9 @@ npm intall
 npm run build-watch
 ```
 
+Open in another terminal window
+
 ```
-// open in another terminal window
 npm run start-server
 ```
 
