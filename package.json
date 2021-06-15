@@ -8,6 +8,7 @@
     "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
     "start-server": "nodemon main.js -e html,js,css --ignore public",
     "build-watch": "webpack -w",
+    "deploy": "script/deploy",
     "start": "echo 'Running production server' && node main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
