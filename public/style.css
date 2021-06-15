@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  color: #5f5f5f;
+  background-color: #fbfbfb;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 
+---------- NAVIGATION SECTION ----->
+*/
+nav {
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.12);
+  padding: 0px 12px;
+}
+
+.active-nav-item {
+  color: rgba(95, 95, 95, 0.6);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #5f5f5f;
+}
+
+a:hover {
+  color: rgba(95, 95, 95, 0.6);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 200;
+  font-style: italic;
+  color: #8a6dff;
+  text-decoration: underline;
+}
+
+.nav-menu {
+  width: 80%;
+  justify-content: flex-end;
+  column-gap: 8em;
+}
+
+ul {
+  padding: 6px 16px;
+  font-size: 12px;
+  column-gap: 2.5em;
+  list-style-type: none;
+  border: thin solid #e5e5e5;
+  border-radius: 20px;
+}
+
+li:hover {
+  color: #8a6dff;
+  cursor: pointer;
+}
+
+.write-mode-section {
+  column-gap: 2em;
+}
+
+.itemSelected {
+  color: #8a6dff;
+}
+
+.backgroundMenu {
+  position: absolute;
+  top: 64px;
+  right: 68px;
+  height: 80px;
+  width: 690px;
+  justify-content: space-evenly;
+  background-color: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 16px 16px;
+  border-top: thin solid #e5e5e5;
+}
+
+.color-option {
+  height: 62px;
+  width: 58px;
+  border-radius: 18px;
+  padding: 2px;
+  border: 0.5px solid #e5e5e5;
+}
+
+.color-option:hover,
+.color-option:focus {
+  opacity: 0.5;
+}
+/* ---  END NAVIGATION ---*/
+
+/* 
+---------- MAIN SECTION ----->
+*/
+main {
+  margin-top: 65px;
+}
+
+/*---------- HOME ------> */
+.text-home {
+  padding: 16px 80px;
+}
+
+.text-home-header {
+  height: 32px;
+  font-style: oblique;
+  color: rgba(78, 78, 78, 0.55);
+  margin-bottom: 8px;
+}
+
+.main-section {
+  min-width: 900px;
+}
+
+.text-section-1,
+.text-section-2 {
+  height: 620px;
+  width: 50%;
+}
+
+.text-section-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text-field-container {
+  height: 100%;
+  width: 100%;
+}
+
+/*---------- HOME TEXTAREA ------> */
+textarea {
+  border: none;
+  width: 94%;
+  min-width: 400px;
+  height: 590px;
+  resize: none;
+  outline: none;
+  overflow: auto;
+  font-size: large;
+  color: #2a2a2a;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #e5e5e5;
+  border-radius: 18px;
+}
+
+/*---------- HOME STATS ------> */
+.text-stats-container {
+  height: 540px;
+  width: 72%;
+  min-width: 350px;
+  padding: 0px 20px;
+  border: thin solid #e5e5e5;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.text-stats-container p {
+  font-size: small;
+  font-weight: 200;
+}
+
+.text-stats-header {
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px 0px;
+}
+
+.text-stats-body {
+  font-size: normal;
+  font-weight: 400;
+  padding: 4px;
+}
+
+table,
+tbody {
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  display: table-row;
+  line-height: 2em;
+  width: 100%;
+}
+td {
+  border-bottom: thin solid #e5e5e5;
+  width: 50%;
+}
+
+.text-stats-footnote {
+  margin-top: 48px;
+}
+/*---------- END HOME ------> */
+
+/*---------- FOCUS MODE STYLES ------> */
+#exitFocusMode {
+  position: absolute;
+  top: 90px;
+  right: 28px;
+  font-size: 22px;
+  color: rgba(95, 95, 95, 0.5);
+  border-top: solid rgba(95, 95, 95, 0.5) 1px;
+}
+#exitFocusMode:hover {
+  cursor: pointer;
+  color: #8a6dff;
+}
+
+.focusMode {
+  top: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+.focusModeTextArea {
+  height: 98%;
+  width: 85%;
+  max-width: 900px;
+  min-width: 400px;
+  padding: 8px 0px;
+}
+
+.focusModeTextArea::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
