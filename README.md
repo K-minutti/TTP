@@ -1,6 +1,6 @@
 # Challenge 2 - Word Count Challenge
 
-![alt text](https://github.com/K-minutti/TTP/blob/main/public/favicon.ico)
+![alt text](https://github.com/K-minutti/readme-images/blob/main/ttp-wc.png)
 
 # Text Stats
 
