@@ -1,6 +1,4 @@
-/*
- * Helper functions for parseTextStats()
- */
+/* Helper functions for parseTextStats()*/
 function isLetter(c) {
   if (c) return c.length == 1 && !!c.match(/[A-Z|a-z|ü|é]/i);
 }
